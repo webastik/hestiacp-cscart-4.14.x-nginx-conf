@@ -24,7 +24,7 @@ server {
     #   Сжатие
     gzip on;
     gzip_disable "msie6";
-    gzip_comp_level 6;
+    gzip_comp_level 2;
     gzip_min_length  1100;
     gzip_buffers 16 8k;
     gzip_proxied any;
@@ -223,7 +223,7 @@ server {
 
     ########    HestiaCP conf       ########
 
-    location / {
+    /*location / {
 
         location ~* ^.+\.(jpeg|jpg|png|webp|gif|bmp|ico|svg|css|js)$ {
             expires     max;
@@ -241,8 +241,8 @@ server {
             include         /etc/nginx/fastcgi_params;
             include     %home%/%user%/conf/web/%domain%/nginx.fastcgi_cache.conf*;     
         }
-    }
-
+    }*/
+    
     location /error/ {
         alias   %home%/%user%/web/%domain%/document_errors/;
     }
