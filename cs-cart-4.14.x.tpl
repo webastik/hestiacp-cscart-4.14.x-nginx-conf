@@ -1,6 +1,6 @@
 #   cs-cart-4.14.x.tpl
 #   HestiaCP & CS-Cart 4.14.x Nginx config, by karen.marketing
-#   /usr/local/hestia/data/templates/web/nginx/php-fpm
+#   Place this file /usr/local/hestia/data/templates/web/nginx/php-fpm
 #### Testing was successfully carried out on HestiaCP 1.5.15.
 
 server {
